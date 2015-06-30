@@ -13,6 +13,9 @@
     <!-- 3. Declare the element. Configure using its attributes. -->
     <paper-input label="Your name here"></paper-input>
     <paper-button raised>Say Hello</paper-button>
+    <paper-material elevation="2">
+This is just testing of the paper material
+    </paper-material>
     <div id="greeting"></div>
 
     <script>
@@ -21,7 +24,8 @@
       document.addEventListener('WebComponentsReady', function() {
         var input = document.querySelector('paper-input');
         var button = document.querySelector('paper-button');
-        var greeting = document.getElementById("greeting");
+        //var greeting = document.getElementById("greeting");
+        var greeting = document.querySelector("paper-material");
         button.addEventListener('click', function() {
           greeting.textContent = 'Hello, ' + input.value;
         });
@@ -32,6 +36,9 @@
       background: green;
       color:yellow;
     }
+    paper-button::shadow paper-ripple {
+  color: blue;
+}
     </style>
   </body>
 </html>
