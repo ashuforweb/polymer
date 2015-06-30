@@ -1,0 +1,13 @@
+{
+  "name": "paper",
+  "version": "0.0.1a",
+  "homepage": "https://github.com/ashuforweb/polymer",
+  "authors": [
+    "Ashutosh Singh <ashuforweb@gmail.com>"
+  ],
+  "description": "polymer paper testing",
+  "license": "MIT",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  }
+}
