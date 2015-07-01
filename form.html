@@ -15,15 +15,20 @@
     <link rel="import" href="bower_components/gold-phone-input/gold-phone-input.html">
     <link rel="import" href="bower_components/gold-zip-input/gold-zip-input.html">
     <link rel="import" href="bower_components/gold-cc-input/gold-cc-input.html">
+    <link rel="import" href="bower_components/google-map/google-map.html">
+    <style>
+  google-map {
+    height: 200px;
+  }
+</style>
   </head>
   <body>
-      <div style="width:300px;">
-        <paper-input label="First Name"></paper-input>
-        <paper-input label="Last Name"></paper-input>
-        <gold-email-input label="email address" auto-validate></gold-email-input>
-        <gold-phone-input lable="Phone Number" country-code="1" phone-number-pattern="XXX-XXX-XXXX" auto-validate></gold-phone-input>
-        <gold-zip-input label="Zip Code" auto-validate></gold-zip-input>
-        <gold-cc-input label="Credit Card" auto-validate></gold-cc-input>
-      </div>
+    <paper-input label="First Name"></paper-input>
+    <paper-input label="Last Name"></paper-input>
+    <gold-email-input label="email address" auto-validate></gold-email-input>
+    <gold-phone-input lable="Phone Number" country-code="1" phone-number-pattern="XXX-XXX-XXXX" auto-validate></gold-phone-input>
+    <gold-zip-input label="Zip Code" auto-validate></gold-zip-input>
+    <gold-cc-input label="Credit Card" auto-validate></gold-cc-input>
+    <google-map latitude="37.77493" longitude="-122.41942"></google-map>
   </body>
 </html>
