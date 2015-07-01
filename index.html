@@ -11,8 +11,15 @@
     <link rel="import" href="bower_components/paper-radio-button/paper-radio-button.html">
     <link rel-"import" href="bower_components/paper-menu/paper-menu.html">
     <link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
+    <link rel="import" href="bower_components/google-chart/google-chart.html">
   </head>
   <body>
+    <google-chart
+  type='pie'
+  options='{"title": "Distribution of days in 2001Q1"}'
+  cols='[{"label":"Month", "type":"string"}, {"label":"Days", "type":"number"}]'
+  rows='[["Jan", 31],["Feb", 28],["Mar", 31]]'>
+</google-chart>
     <!-- 3. Declare the element. Configure using its attributes. -->
     <paper-input label="Your name here"></paper-input>
     <paper-button raised>Say Hello</paper-button>
