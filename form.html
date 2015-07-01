@@ -12,10 +12,14 @@
     <link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
     <link rel="import" href="bower_components/google-chart/google-chart.html">
     <link rel="import" href="bower_components/gold-email-input/gold-email-input.html">
+    <link rel="import" href="bower_components/gold-phone-input/gold-phone-input.html">
   </head>
   <body>
-    <paper-input label="First Name"></paper-input>
-    <paper-input label="Last Name"></paper-input>
-    <gold-email-input label="email address" auto-validate></gold-email-input>
+      <div style="width:300px;">
+        <paper-input label="First Name"></paper-input>
+        <paper-input label="Last Name"></paper-input>
+        <gold-email-input label="email address" auto-validate></gold-email-input>
+        <gold-phone-input lable="Phone Number" country-code="1" phone-number-pattern="XXX-XXX-XXXX" auto-validate></gold-phone-input>
+      </div>
   </body>
 </html>
