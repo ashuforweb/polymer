@@ -18,9 +18,17 @@
     <link rel="import" href="bower_components/google-map/google-map.html">
     <link rel="import" href="bower_components/paper-fab/paper-fab.html">
     <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
     <style>
   google-map {
     height: 200px;
+  }
+  paper-button{
+    background: green;
+    color: yellow;
+  }
+  paper-button::shadow paper-ripple{
+    color:blue;
   }
 </style>
   </head>
@@ -33,5 +41,6 @@
     <gold-cc-input label="Credit Card" auto-validate></gold-cc-input>
     <google-map latitude="37.77493" longitude="-122.41942"></google-map>
     <paper-fab icon="add"></paper-fab>
+    <paper-button raised>Save</paper-button>
   </body>
 </html>
