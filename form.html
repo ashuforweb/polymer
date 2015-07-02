@@ -22,6 +22,7 @@
     <link rel="import" href="bower_components/paper-dialog/paper-dialog.html">
     <link rel="import" href="bower_components/neon-animation/scale-up-animation.html">
     <link rel="import" href="bower_components/neon-animation/fade-out-animation.html">
+    <link rel="import" href="bower_components/google-chart/google-chart.html">
     <style>
   google-map {
     height: 200px;
@@ -53,5 +54,11 @@
     <paper-button dialog-dismiss>Cancel</paper-button>
     <paper-button dialog-confirm>Accept</paper-button>
     </paper-dialog>
+    <google-chart
+  type='pie'
+  options='{"title": "Distribution of days in 2001Q1"}'
+  cols='[{"label":"Month", "type":"string"}, {"label":"Days", "type":"number"}]'
+  rows='[["Jan", 31],["Feb", 28],["Mar", 31]]'>
+</google-chart>
   </body>
 </html>
